@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfolio Pessoal</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .project-videos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .project-videos div {
+            flex: 1 1 calc(33.333% - 15px);
+            box-sizing: border-box;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,6 +31,7 @@
                 <ul>
                     <li><a href="#bio">Bio</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#Jogo">Meu Projeto</a></li>
                     <li><a href="#atividades">Atividades Realizadas</a></li>
                 </ul>
             </nav>
@@ -50,13 +68,17 @@
 
     <section id="atividades">
         <div class="container">
-            <h2>Atividades Realizadas</h2>
-            <ul>
-                <li>[Descrição da atividade 1]</li>
-                <li>[Descrição da atividade 2]</li>
-                <li>[Descrição da atividade 3]</li>
-                <li>[Descrição da atividade 4]</li>
-            </ul>
+            <h2>Algumas criações em LUA, no Roblox Studio</h2>
+            <div class="project-videos">
+                <div>
+                    <video controls>
+                        <source src="portfolio/socos.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                        <a href="portfolio/socos.mp4">Baixe o vídeo aqui</a> para assistir.
+                    </video>
+                </div>
+                <!-- Adicione mais vídeos conforme necessário -->
+            </div>
         </div>
     </section>
 
